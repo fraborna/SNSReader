@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="login_title_text">30sp</dimen>
+    <dimen name="login_title_margin_bottom">40dp</dimen>
+    <dimen name="login_title_margin_top">20dp</dimen>
+    <dimen name="login_textview_width">250dp</dimen>
+    <dimen name="login_button">150dp</dimen>
+    <dimen name="login_copyright_margin_top">100dp</dimen>
+    <dimen name="login_copyright_text">25sp</dimen>
+    <dimen name="main_nickname">15sp</dimen>
+    <dimen name="main_nickname_margin_lr">300dp</dimen>
+    <dimen name="sns_selector">5dp</dimen>
+    <dimen name="bottom_selector">5dp</dimen>
+    <dimen name="comment_headimage_size">50dp</dimen>
+    <dimen name="tweets_action_textsize">15sp</dimen>
+    <dimen name="tweets_action_divider_size">18dp</dimen>
+    <dimen name="tweets_action_padding">20dp</dimen>
+    <dimen name="tweets_content_textsize">15sp</dimen>
+    <dimen name="tweets_username_textsize">20sp</dimen>
+    <dimen name="tweets_content_divider">3dp</dimen>
+    <dimen name="tweets_item_padding">5dp</dimen>
+    <dimen name="tweets_item_padding_lr">15dp</dimen>
+    <dimen name="setting_text_size">30sp</dimen>
+    <dimen name="setting_padding">20dp</dimen>
+    <dimen name="publish_edittext">100dp</dimen>
+    <dimen name="android_padding">8dp</dimen>
+
+</resources>

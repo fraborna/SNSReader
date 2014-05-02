@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/comment_headimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/default_headimage"
+        android:contentDescription="@string/tweets_body_headimage" />
+
+    <LinearLayout
+        android:id="@+id/tweets_item_sublinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/comment_headimage"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tweets_item_padding" >
+
+        <TextView
+            android:id="@+id/comment_username"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:textSize="@dimen/tweets_username_textsize" />
+
+        <TextView
+            android:id="@+id/comment_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/tweets_username_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweets_item_sublinear1"
+        android:paddingTop="@dimen/tweets_item_padding"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+</RelativeLayout>

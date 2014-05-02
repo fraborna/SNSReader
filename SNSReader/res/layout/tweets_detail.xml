@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/tweets_body_sublinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/tweets_item_padding" >
+
+        <TextView
+            android:id="@+id/tweets_body_username"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/tweets_username_textsize" />
+
+        <TextView
+            android:id="@+id/tweets_body_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="@dimen/tweets_username_textsize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tweets_body_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweets_body_sublinear1" />
+
+    <TextView
+        android:id="@+id/zan_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tweets_body_content"
+        android:layout_gravity="right" />
+
+    <TextView
+        android:id="@+id/comments_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/zan_list"
+        android:layout_gravity="left"
+        android:text="@string/comments_hint" />
+
+    <ListView
+        android:id="@+id/comments_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comments_hint"
+        android:cacheColorHint="#00000000"
+        android:fadeScrollbars="true" >
+    </ListView>
+
+</RelativeLayout>

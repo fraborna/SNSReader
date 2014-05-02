@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tweets_item_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/tweets_item_padding"
+    android:paddingTop="@dimen/tweets_item_padding" >
+
+    <TextView
+        android:id="@+id/tweets_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/android_padding"
+        android:textSize="@dimen/tweets_username_textsize" />
+
+    <TextView
+        android:id="@+id/tweets_item_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="@dimen/android_padding"
+        android:textSize="@dimen/tweets_username_textsize" />
+
+    <TextView
+        android:id="@+id/tweets_item_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweets_item_username"
+        android:paddingLeft="@dimen/android_padding"
+        android:paddingTop="@dimen/tweets_item_padding"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+    <ImageView
+        android:id="@+id/tweets_content_divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tweets_content_divider"
+        android:layout_below="@id/tweets_item_content"
+        android:background="@drawable/line"
+        android:contentDescription="@string/horizontal_divider" />
+
+    <LinearLayout
+        android:id="@+id/tweets_item_sublinear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tweets_content_divider"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tweets_action_padding"
+        android:paddingRight="@dimen/tweets_action_padding"
+        android:paddingTop="@dimen/tweets_item_padding" >
+
+        <TextView
+            android:id="@+id/tweets_item_zan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tweets_body_zan"
+            android:textSize="@dimen/tweets_action_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tweets_action_divider_size"
+            android:background="@drawable/line"
+            android:contentDescription="@string/vertical_divider" />
+
+        <TextView
+            android:id="@+id/tweets_item_comment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tweets_body_comment"
+            android:textSize="@dimen/tweets_action_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tweets_action_divider_size"
+            android:background="@drawable/line"
+            android:contentDescription="@string/vertical_divider" />
+
+        <TextView
+            android:id="@+id/tweets_item_forward"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/tweets_body_forward"
+            android:textSize="@dimen/tweets_action_textsize" />
+    </LinearLayout>
+
+</RelativeLayout>

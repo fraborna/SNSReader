@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/homepage_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/homepage_head_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/homepage_headimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/default_headimage"
+            android:contentDescription="@string/tweets_body_headimage" />
+
+        <LinearLayout
+            android:id="@+id/homepage_head_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/homepage_headimage"
+            android:layout_toRightOf="@id/homepage_headimage"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/homepage_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/homepage_school"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/homepage_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homepage_head_relative"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/viewers_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/homepage_viewers_num" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tweets_action_divider_size"
+            android:background="@drawable/line"
+            android:contentDescription="@string/vertical_divider" />
+
+        <TextView
+            android:id="@+id/tweets_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/homepage_tweets_num" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tweets_action_divider_size"
+            android:background="@drawable/line"
+            android:contentDescription="@string/vertical_divider" />
+
+        <TextView
+            android:id="@+id/friends_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/homepage_friends_num" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/homepage_tweets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homepage_status"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/blank"
+        android:fadeScrollbars="true" >
+    </ListView>
+
+</RelativeLayout>

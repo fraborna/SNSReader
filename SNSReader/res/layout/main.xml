@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nju.fraborna.weibo.myweibo.MainActivity" >
+
+    <include
+        android:id="@+id/main_top_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/top_panel" />
+
+    <include
+        android:id="@+id/main_sns_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main_top_panel"
+        layout="@layout/sns_selector" />
+
+    <include
+        android:id="@+id/main_bottom_selector"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/bottom_selector" />
+
+    <ListView
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/main_bottom_selector"
+        android:layout_below="@id/main_sns_selector"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/divider"
+        android:fadeScrollbars="true" />
+
+</RelativeLayout>

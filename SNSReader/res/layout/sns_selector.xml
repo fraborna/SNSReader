@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:textSize="@dimen/tweets_content_textsize" >
+
+    <TextView
+        android:id="@+id/sns_renren"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/sns_renren"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+    <TextView
+        android:id="@+id/sns_sinaweibo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/sns_sinaweibo"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+    <TextView
+        android:id="@+id/sns_tencentweibo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/sns_tencentweibo"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+</LinearLayout>

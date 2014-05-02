@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nju.fraborna.myweibo.activities.LoginActivity" >
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/login_title_margin_bottom"
+        android:layout_marginTop="@dimen/login_title_margin_top"
+        android:text="@string/login_title_renren"
+        android:textSize="@dimen/login_title_text" />
+
+    <LinearLayout
+        android:id="@+id/login_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_account"
+            android:layout_width="@dimen/login_textview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/login_account" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="@dimen/login_textview_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:hint="@string/login_password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="@dimen/login_button"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_title_margin_top"
+            android:text="@string/login_login" />
+
+        <Button
+            android:id="@+id/login_register"
+            android:layout_width="@dimen/login_button"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_title_margin_top"
+            android:text="@string/login_register" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_linearlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_copyright_margin_top"
+        android:text="@string/login_copyright"
+        android:textSize="@dimen/login_copyright_text" />
+
+</RelativeLayout>

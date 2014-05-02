@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/bottom_tweets"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/bottom_back_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/main_news"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+    <TextView
+        android:id="@+id/bottom_notices"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/bottom_back_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/main_put"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+
+    <!--
+    <TextView
+        android:id="@+id/bottom_homepage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/bottom_back_normal"
+        android:gravity="center"
+        android:paddingBottom="@dimen/bottom_selector"
+        android:paddingLeft="@dimen/bottom_selector"
+        android:paddingRight="@dimen/bottom_selector"
+        android:paddingTop="@dimen/bottom_selector"
+        android:text="@string/main_homepage"
+        android:textColor="@color/bottom_text_normal"
+        android:textSize="@dimen/tweets_content_textsize" />
+    -->
+
+</LinearLayout>
